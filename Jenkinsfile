@@ -10,7 +10,7 @@ pipeline {
 
     stage('push') {
       steps {
-        sh '''docker login 192.168.1.10 -u user -p 12345678
+        sh '''docker login nexus.lazarev.gq:14587 -u user -p 12345678
 '''
       }
     }
